@@ -120,11 +120,9 @@ All data used in the project is provided in CSV format under `/data/`. These fil
 
 ---
 
-
-
 ## 🧪 ER Model
 
-- File: `01-shipshop.mwb`
+- File: `01-Cartmart.mwb`
 - Tool: MySQL Workbench
 - Includes relational design for all business entities and relationships
 
