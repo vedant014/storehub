@@ -1,4 +1,4 @@
-use shipshop;
+use CartMart;
 
 create table website_sessions(
 	website_session_id bigint,

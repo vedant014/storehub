@@ -1,4 +1,4 @@
-use shipshop;
+use CartMart;
 
 -- one time query for populating data into orders table from order_items table 
 insert into orders

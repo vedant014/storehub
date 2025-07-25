@@ -42,7 +42,7 @@ she has a great backup and recovery plan. She would like a report on possible ri
 data loss and steps the company can take to mitigate these concerns. 
 */ 
 
-use shipshop;
+use CartMart;
 
 alter table order_items add column is_primary_item bool;
 
