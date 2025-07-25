@@ -1,6 +1,6 @@
-# 🛒 ShipShop - E-Commerce Database Project
+# 🛒 Storehub - E-Commerce Database Project
 
-This project presents a robust, scalable MySQL database solution designed from scratch for a fictional e-commerce platform named "ShipShop." It includes complete database schema design, SQL logic automation, performance optimization, analytics-ready views, and backup strategies.
+This project presents a robust, scalable MySQL database solution designed from scratch for a fictional e-commerce platform named "CartMart." It includes complete database schema design, SQL logic automation, performance optimization, analytics-ready views, and backup strategies.
 
 ---
 
@@ -98,7 +98,7 @@ All data used in the project is provided in CSV format under `/data/`. These fil
 ### 🧠 Logical Backup
 
 - Performed using `mysqldump`
-- File: `shipshop_logical_backup.sql` located in `/backup/logical/`
+- File: `CartMart_logical_backup.sql` located in `/backup/logical/`
 
 ### 🗃️ Physical Backup
 
@@ -120,15 +120,7 @@ All data used in the project is provided in CSV format under `/data/`. These fil
 
 ---
 
-## 📂 Schema Files
 
-All schema scripts are available in sequence: `01-shipshop.sql` to `09-shipshop.sql` under the `/schema/` directory.
-
-### 📷 Schema File List
-
-![SQL File Structure](images/sql_schema_file_list.png)
-
----
 
 ## 🧪 ER Model
 
@@ -145,13 +137,13 @@ To recreate the schema locally:
 ```bash
 # Step 1: Create DB
 mysql -u root -p
-CREATE DATABASE shipshop;
+CREATE DATABASE CartMart;
 
 # Step 2: Import schema
-mysql -u root -p shipshop < schema/01-shipshop.sql
-mysql -u root -p shipshop < schema/02-shipshop.sql
+mysql -u root -p CartMart < schema/01-CartMart.sql
+mysql -u root -p CartMart< schema/02-CartMart.sql
 ...
 
 # Or load logical backup directly
-mysql -u root -p shipshop < backup/logical/shipshop_logical_backup.sql
+mysql -u root -p CartMart < backup/logical/CartMart_logical_backup.sql
 ```
